@@ -46,6 +46,23 @@
       bottom: 0;
       width: 100%;
     }
+
+    /* Adiciona o efeito de flutuação à imagem */
+    .floating-image {
+      animation: floatAnimation 3s infinite ease-in-out;
+    }
+
+    /* Define a animação de flutuação */
+    @keyframes floatAnimation {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+
   </style>
 </head>
 <body>
@@ -53,7 +70,9 @@
     <h1> ☠️ Vere 🎩⃤ </h1>
   </header>
 
+ <img class="floating-image" src="https://github.com/phelipesete/img/assets/71620144/24361318-7061-419a-8d8a-7dc5f37d3ec5" alt=" Imagem Flutuante :)" >
 
+    
   <nav>
     <a href="https://phelipesete.github.io/bio">Início</a>
     <a href="#">Sobre</a>
