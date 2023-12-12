@@ -47,6 +47,31 @@
       width: 100%;
     }
 
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    /* Estilo para o vídeo de fundo */
+    #background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    }
+
+    /* Estilo opcional para conteúdo sobreposto no vídeo */
+    .content {
+      position: relative;
+      z-index: 1; /* Certifica-se de que o conteúdo está na frente do vídeo */
+      color: white; /* Adapte a cor conforme necessário para a visibilidade */
+      padding: 20px;
+      text-align: center;
+      }
 
   </style>
 </head>
@@ -55,6 +80,15 @@
     <h1> ☠️ Vere 🎩⃤ </h1>
   </header>
 
+  <!-- Vídeo de fundo -->
+  <video id="background-video" autoplay muted loop>
+    <source src="https://github.com/phelipesete/img/assets/71620144/25688747-30dd-4d6b-8d5b-74c360cb52bf" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+
+  <!-- Conteúdo sobreposto opcional -->
+  <div class="content">
+    
   <nav>
     <a href="https://phelipesete.github.io/bio">INICIO</a>
     <a href="#">PROJETOS</a>
